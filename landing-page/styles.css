@@ -26,6 +26,17 @@ body {
     height: 50px;
 }
 
+.headerLogo{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.navbarLinks{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
 .heroItemsContainer{
     display: flex;
     flex-direction: row;
@@ -36,9 +47,31 @@ body {
 }
 
 .heroItems{
+    flex:1;
+    padding-right: 28px;
 }
 
 .heroImage{
-    height: 200px;
+    height: 250px;
     width: 600px;
+    flex: 1;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+a, .heroSecondaryText{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.heroButton{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 8px 28px;
+    width:max-content;
+    border-radius: 8px;
 }
