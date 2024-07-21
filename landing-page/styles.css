@@ -85,20 +85,19 @@ a, .heroSecondaryText{
 }
 
 h2{
-    border: 1px dotted green;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 .cardContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 100px;
-    border: 1px dotted blue;
+    padding-bottom: 80px;
     width: 70%;
 }
 
 .card{
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
