@@ -85,8 +85,11 @@ a, .heroSecondaryText{
 }
 
 h2{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-top: 20px;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 800;
 }
 
 .cardContainer{
