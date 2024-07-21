@@ -123,11 +123,12 @@ h2{
 }
 
 .quoteContainer{
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    width: 60%;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .quote{
@@ -138,5 +139,7 @@ h2{
 }
 
 .quoteAuthor{
-
+    align-self: flex-end;
+    font-weight: 600;
+    margin-top: -20px;
 }
