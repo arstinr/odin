@@ -6,13 +6,11 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 1px solid red;
 }
 
 .heroSection{
     display: flex;
     flex-direction: column;
-    border: 1px solid aqua;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -22,7 +20,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid lawngreen;
     height: 50px;
 }
 
@@ -162,19 +159,49 @@ h2{
     background-color: #3882F6;
     border-radius: 8px;
     width: 70%;
+    color: #E5E7EB;
 }
 
 .ctaTextContainer{
     display: flex;
     flex-direction: column;
+    width: 60%;
+    margin: 30px 50px;
+}
+
+.ctaText{
+    margin-bottom: 0px;
+    font-weight: 800;
+}
+
+.ctaDesc{
+    margin-top: 4px;
+}
+
+.ctaButtonContainer{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
 }
 
 .ctaButton{
-
+    border: 2px solid #F9FAF8;
+    border-radius: 8px;
+    width: 100px;
+    text-align: center;
+    padding: 4px 12px;
+    font-weight: 400;
 }
 
 .footer{
     height: 50px;
+    color: #E5E7EB;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerText{
