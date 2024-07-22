@@ -145,15 +145,28 @@ h2{
 }
 
 .ctaSection{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: white;
 }
 
 .ctaContainer{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 8px;
+    width: 70%;
 }
 
 .ctaTextContainer{
-
+    display: flex;
+    flex-direction: column;
 }
 
 .ctaButton{
@@ -161,9 +174,9 @@ h2{
 }
 
 .footer{
-
+    height: 50px;
 }
 
 .footerText{
-    
+    align-self: center;
 }
