@@ -9,9 +9,6 @@
     <script>
         console.log('Hello world!!!!')
 
-        let humanScore = 0;
-        let computerScore = 0;
-
 
         function getComputerChoice() {
             let computerChoice = Math.floor(Math.random() * 3) + 1;
@@ -21,19 +18,22 @@
                 computerChoice = "paper";
             } else if(computerChoice == 3){
                 computerChoice = "scissors";
-            }
+            } 
 
-            console.log(computerChoice)
             return computerChoice
         }
 
 
         function getHumanChoice(){
             let humanChoice = prompt("What's your move?");
-
             humanChoice = humanChoice.toLowerCase();
 
-            return humanChoice;
+            if ((humanChoice != "rock") && (humanChoice != "paper") && (humanChoice != "scissors")){
+                console.log("Please enter a valid move!");
+                getHumanChoice()
+            } else {
+                return humanChoice;
+            }
         }
 
         function playRound(humanChoice, computerChoice){
@@ -42,17 +42,33 @@
             if ((humanChoice == "rock" && computerChoice == "rock") || (humanChoice == "paper" && computerChoice == "paper") || (humanChoice == "scissors" && computerChoice == "scissors")){
 
                 console.log("Draw! Play another round!")
-                playRound();
             } else if ((humanChoice == "rock" && computerChoice == "scissors") || (humanChoice == "scissors" && computerChoice == "paper") || (humanChoice == "paper" && computerChoice == "rock")){
                 humanScore += 1;
+                console.log("Human point!")
             } else if ((computerChoice == "rock" && humanChoice == "scissors") || (computerChoice == "scissors" && humanChoice == "paper") || (computerChoice == "paper" && humanChoice == "rock")){
                 computerScore += 1;
+                console.log("Computer point!")
             }
-            
         }
 
+        function playGame() {
 
-        getComputerChoice();
+            let humanScore = 0;
+            let computerScore = 0;
+            let roundsToPlay = 6;
+
+            console.log("Starting game..");
+            for (let i = 1; i < roundsToPlay; i++) {
+                console.log(`Round ${i}`)
+                getComputerChoice();
+                getHumanChoice();
+                playRound();
+                console.log(`Current score: H${humanScore} : C${computerScore}`);
+            }
+        }
+
+        playGame();
+
     </script>
     
     <!--
