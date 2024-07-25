@@ -43,13 +43,12 @@
 
                 console.log("Draw! Play another round!")
                 playRound();
-            } else if ((humanChoice == "rock" && computerChoice == "scissors") || (humanChoice == "scissors" && computerChoice == "paper") || (humanChoice == "paper" && computerChoice == "rock")) {
+            } else if ((humanChoice == "rock" && computerChoice == "scissors") || (humanChoice == "scissors" && computerChoice == "paper") || (humanChoice == "paper" && computerChoice == "rock")){
                 humanScore += 1;
+            } else if ((computerChoice == "rock" && humanChoice == "scissors") || (computerChoice == "scissors" && humanChoice == "paper") || (computerChoice == "paper" && humanChoice == "rock")){
+                computerScore += 1;
             }
             
-            //rock > scissors
-            //scissors > paper
-            //paper > rock
         }
 
 
