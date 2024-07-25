@@ -41,8 +41,10 @@
             //if statements to decide who egets points
             if ((humanChoice == "rock" && computerChoice == "rock") || (humanChoice == "paper" && computerChoice == "paper") || (humanChoice == "scissors" && computerChoice == "scissors")){
 
-            } else if ((humanChoice == "rock" && computerChoice == "rock")) {
-
+                console.log("Draw! Play another round!")
+                playRound();
+            } else if ((humanChoice == "rock" && computerChoice == "scissors") || (humanChoice == "scissors" && computerChoice == "paper") || (humanChoice == "paper" && computerChoice == "rock")) {
+                humanScore += 1;
             }
             
             //rock > scissors
