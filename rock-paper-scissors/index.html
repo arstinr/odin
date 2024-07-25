@@ -36,7 +36,7 @@
             }
         }
 
-        function playRound(humanChoice, computerChoice){
+        function playRound(humanChoice, computerChoice, ){
 
             //if statements to decide who egets points
             if ((humanChoice == "rock" && computerChoice == "rock") || (humanChoice == "paper" && computerChoice == "paper") || (humanChoice == "scissors" && computerChoice == "scissors")){
@@ -51,10 +51,12 @@
             }
         }
 
+
+        let humanScore = 0;
+        let computerScore = 0;
+
         function playGame() {
 
-            let humanScore = 0;
-            let computerScore = 0;
             let roundsToPlay = 6;
 
             console.log("Starting game..");
