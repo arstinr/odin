@@ -25,18 +25,23 @@
 
 
         function getHumanChoice(){
-            let humanChoice = prompt("What's your move?");
-            humanChoice = humanChoice.toLowerCase();
+            let humanChoice;
 
-            if ((humanChoice != "rock") && (humanChoice != "paper") && (humanChoice != "scissors")){
-                console.log("Please enter a valid move!");
-                getHumanChoice()
-            } else {
-                return humanChoice;
-            }
+            while (true){
+                let humanChoice = prompt("What's your move?");
+                humanChoice = humanChoice.toLowerCase();
+                if ((humanChoice == "rock") || (humanChoice == "paper") || (humanChoice == "scissors")){
+                    break;
+                } else {  
+                    console.log("Please enter a valid move!");
+                }
+
+            }  
+            return humanChoice;          
+
         }
 
-        function playRound(humanChoice, computerChoice, ){
+        function playRound(humanChoice, computerChoice){
 
             //if statements to decide who egets points
             if ((humanChoice == "rock" && computerChoice == "rock") || (humanChoice == "paper" && computerChoice == "paper") || (humanChoice == "scissors" && computerChoice == "scissors")){
@@ -56,15 +61,14 @@
         let computerScore = 0;
 
         function playGame() {
-
             let roundsToPlay = 6;
-
             console.log("Starting game..");
+
             for (let i = 1; i < roundsToPlay; i++) {
                 console.log(`Round ${i}`)
-                getComputerChoice();
-                getHumanChoice();
-                playRound();
+                let computerChoice = getComputerChoice();
+                let humanChoice = getHumanChoice();
+                playRound(computerChoice, humanChoice);
                 console.log(`Current score: H${humanScore} : C${computerScore}`);
             }
         }
