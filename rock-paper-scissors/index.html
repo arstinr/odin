@@ -61,7 +61,6 @@
             ) {
                 humanScore += 1;
                 message = "Human point!";
-                return humanScore;
             } else if (
                 (computerChoice == "rock" && humanChoice == "scissors") || 
                 (computerChoice == "scissors" && humanChoice == "paper") || 
@@ -72,7 +71,9 @@
             }
 
             return {
-
+                message: message,
+                humanScore: humanScore,
+                computerScore: computerScore
             }
 
         }
@@ -89,7 +90,7 @@
                 console.log(`Round ${i}`)
                 let computerChoice = getComputerChoice();
                 let humanChoice = getHumanChoice();
-                playRound(computerChoice, humanChoice);
+                playRound(humanChoice, computerChoice);
                 console.log(`Current score: H${humanScore} : C${computerScore}`);
             }
         }
