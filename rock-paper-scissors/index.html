@@ -9,6 +9,8 @@
     <script>
         console.log('Hello world!!!!')
 
+        let humanScore = 0;
+        let computerScore = 0;
 
         function getComputerChoice() {
             let computerChoice = Math.floor(Math.random() * 3) + 1;
@@ -20,15 +22,14 @@
                 computerChoice = "scissors";
             } 
 
-            return computerChoice
+            return computerChoice;
         }
 
 
         function getHumanChoice(){
             let humanChoice;
-
             while (true){
-                let humanChoice = prompt("What's your move?");
+                humanChoice = prompt("What's your move?");
                 humanChoice = humanChoice.toLowerCase();
                 if (
                     (humanChoice == "rock") || 
@@ -39,8 +40,8 @@
                 } else {  
                     console.log("Please enter a valid move!");
                 }
-
             }  
+            console.log(`human choice is ${humanChoice}`)
             return humanChoice;          
 
         }
@@ -49,11 +50,7 @@
             let message;
 
             //if statements to decide who egets points
-            if (
-                (humanChoice == "rock" && computerChoice == "rock") || 
-                (humanChoice == "paper" && computerChoice == "paper") || 
-                (humanChoice == "scissors" && computerChoice == "scissors")
-            ) {
+            if ((humanChoice == computerChoice)) {
                 message = "Draw! Play another round!";
             } else if (
                 (humanChoice == "rock" && computerChoice == "scissors") || 
@@ -71,25 +68,29 @@
                 message = "Computer point!";
             }
 
-            return [message, humanScore, computerScore]
+            return {
+                message: message, 
+                humanScore: humanScore, 
+                computerScore: computerScore
+            }
 
         }
-
-
-        let humanScore = 0;
-        let computerScore = 0;
 
         function playGame() {
             let roundsToPlay = 6;
             console.log("Starting game..");
 
             for (let i = 1; i < roundsToPlay; i++) {
-                console.log(`Round ${i}`)
-                let computerChoice = getComputerChoice();
+                console.log(`Round ${i}`);
+
                 let humanChoice = getHumanChoice();
-                playRound(humanChoice, computerChoice);
-                let 
-                console.log(`Current score: H${humanScore} : C${computerScore}`);
+                let computerChoice = getComputerChoice();
+                
+                //playRound(humanChoice, computerChoice);
+
+                let result = playRound(humanChoice, computerChoice);
+                console.log(result.message);
+                console.log(`Current score: H${result.humanScore} : C${result.computerScore}`);
             }
         }
 
