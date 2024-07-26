@@ -45,7 +45,7 @@
 
         }
 
-        function playRound(humanChoice, computerChoice){
+        function playRound(humanChoice, computerChoice) {
 
             //if statements to decide who egets points
             if (
@@ -53,22 +53,28 @@
                 (humanChoice == "paper" && computerChoice == "paper") || 
                 (humanChoice == "scissors" && computerChoice == "scissors")
             ) {
-                console.log("Draw! Play another round!")
+                message = "Draw! Play another round!";
             } else if (
                 (humanChoice == "rock" && computerChoice == "scissors") || 
                 (humanChoice == "scissors" && computerChoice == "paper") || 
                 (humanChoice == "paper" && computerChoice == "rock")
             ) {
                 humanScore += 1;
-                console.log("Human point!")
+                message = "Human point!";
+                return humanScore;
             } else if (
                 (computerChoice == "rock" && humanChoice == "scissors") || 
                 (computerChoice == "scissors" && humanChoice == "paper") || 
                 (computerChoice == "paper" && humanChoice == "rock")
             ) {
                 computerScore += 1;
-                console.log("Computer point!")
+                message = "Computer point!";
             }
+
+            return {
+
+            }
+
         }
 
 
