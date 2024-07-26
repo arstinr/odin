@@ -22,6 +22,7 @@
                 computerChoice = "scissors";
             } 
 
+            console.log(`computer choice is ${computerChoice}`)
             return computerChoice;
         }
 
@@ -91,6 +92,13 @@
                 let result = playRound(humanChoice, computerChoice);
                 console.log(result.message);
                 console.log(`Current score: H${result.humanScore} : C${result.computerScore}`);
+            }
+            console.log('Game is done!')
+            let replay = prompt("Play again? y/n")
+            if (replay == "n"){
+                console.log("bye");
+            } else if (replay == "y") {
+                playGame();
             }
         }
 
