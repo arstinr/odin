@@ -30,7 +30,11 @@
             while (true){
                 let humanChoice = prompt("What's your move?");
                 humanChoice = humanChoice.toLowerCase();
-                if ((humanChoice == "rock") || (humanChoice == "paper") || (humanChoice == "scissors")){
+                if (
+                    (humanChoice == "rock") || 
+                    (humanChoice == "paper") || 
+                    (humanChoice == "scissors")
+                ) {
                     break;
                 } else {  
                     console.log("Please enter a valid move!");
@@ -44,13 +48,24 @@
         function playRound(humanChoice, computerChoice){
 
             //if statements to decide who egets points
-            if ((humanChoice == "rock" && computerChoice == "rock") || (humanChoice == "paper" && computerChoice == "paper") || (humanChoice == "scissors" && computerChoice == "scissors")){
-
+            if (
+                (humanChoice == "rock" && computerChoice == "rock") || 
+                (humanChoice == "paper" && computerChoice == "paper") || 
+                (humanChoice == "scissors" && computerChoice == "scissors")
+            ) {
                 console.log("Draw! Play another round!")
-            } else if ((humanChoice == "rock" && computerChoice == "scissors") || (humanChoice == "scissors" && computerChoice == "paper") || (humanChoice == "paper" && computerChoice == "rock")){
+            } else if (
+                (humanChoice == "rock" && computerChoice == "scissors") || 
+                (humanChoice == "scissors" && computerChoice == "paper") || 
+                (humanChoice == "paper" && computerChoice == "rock")
+            ) {
                 humanScore += 1;
                 console.log("Human point!")
-            } else if ((computerChoice == "rock" && humanChoice == "scissors") || (computerChoice == "scissors" && humanChoice == "paper") || (computerChoice == "paper" && humanChoice == "rock")){
+            } else if (
+                (computerChoice == "rock" && humanChoice == "scissors") || 
+                (computerChoice == "scissors" && humanChoice == "paper") || 
+                (computerChoice == "paper" && humanChoice == "rock")
+            ) {
                 computerScore += 1;
                 console.log("Computer point!")
             }
