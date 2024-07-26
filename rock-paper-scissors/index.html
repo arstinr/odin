@@ -80,6 +80,7 @@
         function playGame() {
             let roundsToPlay = 6;
             console.log("Starting game..");
+            let result;
 
             for (let i = 1; i < roundsToPlay; i++) {
                 console.log(`Round ${i}`);
@@ -89,11 +90,19 @@
                 
                 //playRound(humanChoice, computerChoice);
 
-                let result = playRound(humanChoice, computerChoice);
+                result = playRound(humanChoice, computerChoice);
                 console.log(result.message);
                 console.log(`Current score: H${result.humanScore} : C${result.computerScore}`);
             }
             console.log(`Game is done! Final score: H${result.humanScore} : C${result.computerScore}`)
+            if (result.humanScore >result.computerScore) {
+                console.log(`Human wins!`)
+            } else if (finalComputer == finalHuman) {
+                console.log(`DRAW`)
+            }else {
+                console.log(`Computer wins !!!`)
+            }
+
             let replay = prompt("Play again? y/n")
             if (replay == "n"){
                 console.log("bye");
