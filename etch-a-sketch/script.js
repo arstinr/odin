@@ -1,6 +1,7 @@
 const submitButton = document.querySelector("#submitButton");
 
 function editNumberOfSquares(){
+    //Avoid using variable name conflicts
     const input = prompt("How many squares per side do u want bruh");
 
     if (1 < Number(input) < 100 ){
@@ -10,7 +11,7 @@ function editNumberOfSquares(){
     }
 };
 
-
+//Pass input to function so it's usable
 function createSquares(input){
     const container = document.getElementById("container");
     container.innerHTML = "";
@@ -39,7 +40,7 @@ function createSquares(input){
 
 //use event object
 function handleHover(event){
-    //declare variable as event target
+    //declare variable as event targe // dont call event as the variable?
     const square = event.target;
     square.classList.add("squareHovered");
     console.log('hovering...');
