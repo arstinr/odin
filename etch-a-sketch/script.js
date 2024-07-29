@@ -1,4 +1,4 @@
-
+const submitButton = document.querySelector("#submitButton");
 
 
 function createSquares(){
@@ -20,8 +20,8 @@ function createSquares(){
         container.appendChild(square);
     }
 }
-
-
+createSquares()
+//submitButton.addEventListener('click', createSquares);
 
 //need a loop that creates square elements until number is done.
 //calculate squares per side size to get square size -> add that style to square element
