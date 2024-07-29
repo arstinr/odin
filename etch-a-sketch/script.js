@@ -1,10 +1,21 @@
 const submitButton = document.querySelector("#submitButton");
 
-function createSquares(){
+function editNumberOfSquares(){
+    const input = prompt("How many squares per side do u want bruh");
+
+    if (1 < Number(input) < 100 ){
+        createSquares(input);
+    } else {
+        return false;
+    }
+};
+
+
+function createSquares(input){
     const container = document.getElementById("container");
     container.innerHTML = "";
 
-    const n = 16
+    const n = Number(input);
 
     const containerSize = 960;
     const squareSize = containerSize / n
@@ -34,8 +45,8 @@ function handleHover(event){
     console.log('hovering...');
 };
 
-createSquares()
-//submitButton.addEventListener('click', createSquares);
+
+submitButton.addEventListener('click', editNumberOfSquares);
 
 
 //for button to input number of sq per side, 
