@@ -13,3 +13,8 @@ document.getElementById("container").appendChild(square);
 //for button to input number of sq per side, 
 // remove all previous square elements first using innerHTML = "";
 //, run function to create new set of squares
+
+//for hover effect
+//use jQuery hover() method 
+//(uses jquery mouseenter method for extra cred)
+//^^^ make all elements start with 0% opacity then each mouseenter will darken it by 10%
