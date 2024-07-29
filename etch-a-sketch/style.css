@@ -11,6 +11,10 @@
     background-color: aqua;
 }
 
+.squareHovered {
+    background-color: red;
+}
+
 #submitButton {
     height: 40px;
     width: 60px;
