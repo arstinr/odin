@@ -1,6 +1,5 @@
 const submitButton = document.querySelector("#submitButton");
 
-
 function createSquares(){
     const container = document.getElementById("container");
     container.innerHTML = "";
@@ -19,10 +18,21 @@ function createSquares(){
     
         container.appendChild(square);
     }
+    //ATTACH EVENT LISTENERS AFTER CREATING SQUARES
+    const square = document.querySelectorAll(".square");
+    square.forEach(square => {
+        square.addEventListener('mouseenter', handleHover);
+    });
 }
 
 
-
+//use event object
+function handleHover(event){
+    //declare variable as event target
+    const square = event.target;
+    square.classList.add("squareHovered");
+    console.log('hovering...');
+};
 
 createSquares()
 //submitButton.addEventListener('click', createSquares);
