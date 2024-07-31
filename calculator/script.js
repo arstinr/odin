@@ -20,15 +20,17 @@ function divide(a, b){
 }
 
 function operate(a, b, operator){
-    if (operator === 'add'){
-        return add(a, b);
-    } else if (operator === 'subtract') {
-        return subtract(a, b);
-    } else if (operator === 'multiply') {
-        return multiply(a, b);
-    } else if (operator === 'divide') {
-        return divide(a, b);
-    }
+    return operator(a, b);
+    
+    // if (operator === 'add'){
+    //     return add(a, b);
+    // } else if (operator === 'subtract') {
+    //     return subtract(a, b);
+    // } else if (operator === 'multiply') {
+    //     return multiply(a, b);
+    // } else if (operator === 'divide') {
+    //     return divide(a, b);
+    // }
 }
 
 console.log(add(a, b))
