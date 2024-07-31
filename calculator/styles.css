@@ -6,7 +6,22 @@ body {
 
 .calculator {
     border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 28px;
     height: 750px;
-    width: 450px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.display{
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.buttonContainer {
+    flex: 4;
+    border: 1px solid red;
+    border-radius: 8px;
 }
