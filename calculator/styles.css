@@ -3,3 +3,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.calculator {
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 750px;
+    width: 450px;
+}
