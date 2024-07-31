@@ -1,7 +1,7 @@
 let a = 2;
 let b = 3;
 let operator;
-//operator names are addition, subtraction, multiplication, division
+//operator names are add, subtract, multiply, divide
 
 function add(a, b){
     return a + b;
@@ -20,8 +20,14 @@ function divide(a, b){
 }
 
 function operate(a, b, operator){
-    if (operator == addition){
-
+    if (operator === 'add'){
+        return add(a, b);
+    } else if (operator === 'subtract') {
+        return subtract(a, b);
+    } else if (operator === 'multiply') {
+        return multiply(a, b);
+    } else if (operator === 'divide') {
+        return divide(a, b);
     }
 }
 
