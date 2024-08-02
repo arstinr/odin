@@ -31,9 +31,16 @@ body {
     border-radius: 8px;
 }
 
-.buttonDigit {
+.buttonDigits, .buttonOthers{
+    border: 1px dotted green;
+}
+
+.button {
     height:60px;
     width: 60px;
     border: 1px solid gray;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
