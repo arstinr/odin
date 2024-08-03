@@ -33,6 +33,20 @@ function operate(a, b, operator){
     // }
 }
 
+//user clicks button
+//appends button to display
+//when operator is pressed
+    // if display is not empty
+        // take current display and add it to array
+        // add operator to array
+    // else if (display is empty then display value is 0)
+        // display value is 0 
+        // add operator to array
+    // update display with solution
+
+
+
+
 console.log(add(a, b))
 console.log(subtract(a, b))
 console.log(multiply(a, b))
