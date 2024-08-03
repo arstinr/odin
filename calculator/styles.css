@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-.display{
+#display{
     flex: 1;
     border: 1px solid black;
     border-radius: 8px;
