@@ -48,8 +48,15 @@ function operatorClick(){
         // display value is 0 
         // add operator to array
 
+    //set solution as new 'a' in array
+
     // update display with solution
     //call function (or nah) that clears current array?
+}
+
+function clearArray(){
+    //clear display
+    //clear array
 }
 
 
