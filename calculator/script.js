@@ -47,15 +47,16 @@ function appendToDisplay(value){
     display.innerHTML += value
 }
 
-function operatorClick(){
+function operatorClick(value){
+    //set equation.operator to passed value ^
+
+    //if statement to check if a is null (if not, make display be b)
     //when operator is pressed
-    // if display is not empty (meaning it's 'b' na)
-        //UPDATE EQUATION FUNCTION HERE
-        // take current display and add it to array
-        // add operator to array
+    // if display is not empty (meaning it's 'a')
+        //manually edit object.a to be display
     // else if (display is empty then display value is 0)
-        // display value is 0 
-        // add operator to array
+        // display value is 0 (assign b to be 0)
+        
 
    
 
