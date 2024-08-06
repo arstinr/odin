@@ -41,21 +41,19 @@ function appendToDisplay(value){
     //appends button to display
     const display = document.getElementById("display")
     display.innerHTML += value
-
-    //call function to update array and assign
-
 }
 
 function operatorClick(){
     //when operator is pressed
     // if display is not empty
+        //UPDATE EQUATION FUNCTION HERE
         // take current display and add it to array
         // add operator to array
     // else if (display is empty then display value is 0)
         // display value is 0 
         // add operator to array
 
-    //set solution as new 'a' in array
+   
 
     // update display with solution
     //call function (or nah) that clears current array?
@@ -68,18 +66,16 @@ function clearArray(){
     
     //clear array
     equation = []
-
 }
 
-function updateEquation(){
+//should only be called when an operator is pressed.
+function updateEquation(value){
     //assing n destructure equation array to assign variables
-
+    equation.push(value)
+    console.log(`${equation}`)
 }
 
-
-
-
-
+//next steps: REPLACE ARRAYS WITH OBJECTS
 
 
 
