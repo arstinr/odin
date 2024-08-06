@@ -3,6 +3,8 @@ let b = 3;
 let operator;
 //operator names are add, subtract, multiply, divide
 
+equation = []
+
 function add(a, b){
     return a + b;
 }
@@ -41,6 +43,7 @@ function appendToDisplay(value){
     display.innerHTML += value
 
     //call function to update array and assign
+
 }
 
 function operatorClick(){
@@ -67,7 +70,11 @@ function clearArray(){
 
 }
 
-clearArray()
+function updateEquation(){
+    //assing n destructure equation array to assign variables
+}
+
+
 
 
 
