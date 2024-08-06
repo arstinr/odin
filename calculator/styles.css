@@ -18,6 +18,8 @@ body {
     flex: 1;
     border: 1px solid black;
     border-radius: 8px;
+    font-size: larger;
+    font-weight: 800;
 }
 
 .buttonContainer {

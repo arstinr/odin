@@ -37,6 +37,7 @@ function operate(a, b, operator){
 function appendToDisplay(){
     //user clicks button
     //appends button to display
+    
 }
 
 function operatorClick(){
@@ -60,7 +61,7 @@ function clearArray(){
     display.innerHTML = "";
     
     //clear array
-    
+
 }
 
 clearArray()
