@@ -51,6 +51,12 @@ function operatorClick(value){
     //set equation.operator to passed value ^
     equation.operator = value;
 
+    //if a and b is not null, call operate function and pass values
+        //should update display with answer and set it to new a
+        //set b to null
+    //else if a is not null and b is null, deeper if statement
+        //
+
     //if statement to check if a is null (if not, make display be b)
     //when operator is pressed
     // if display is not empty (meaning it's 'a')
@@ -64,6 +70,7 @@ function operatorClick(value){
     // update display with solution
     //call function (or nah) that clears current array?
 }
+
 
 function clearArray(){
     //clear display
