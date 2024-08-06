@@ -49,7 +49,7 @@ function appendToDisplay(value){
 
 function operatorClick(){
     //when operator is pressed
-    // if display is not empty
+    // if display is not empty (meaning it's 'b' na)
         //UPDATE EQUATION FUNCTION HERE
         // take current display and add it to array
         // add operator to array
