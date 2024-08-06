@@ -67,6 +67,7 @@ function clearArray(){
     display.innerHTML = "";
     
     //clear array
+    equation = []
 
 }
 
