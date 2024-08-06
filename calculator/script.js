@@ -3,7 +3,11 @@ let b = 3;
 let operator;
 //operator names are add, subtract, multiply, divide
 
-let equation = []
+let equation = {
+    a: null,
+    b: null,
+    operator: null
+};
 
 function add(a, b){
     return a + b;
