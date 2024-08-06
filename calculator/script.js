@@ -56,8 +56,14 @@ function operatorClick(){
 
 function clearArray(){
     //clear display
+    const display = document.getElementById("display")
+    display.innerHTML = "";
+    
     //clear array
+    
 }
+
+clearArray()
 
 
 
