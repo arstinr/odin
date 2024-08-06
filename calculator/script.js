@@ -49,6 +49,7 @@ function appendToDisplay(value){
 
 function operatorClick(value){
     //set equation.operator to passed value ^
+    equation.operator = value;
 
     //if statement to check if a is null (if not, make display be b)
     //when operator is pressed
