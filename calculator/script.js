@@ -37,7 +37,8 @@ function operate(a, b, operator){
 function appendToDisplay(value){
     //user clicks button
     //appends button to display
-    
+    const display = document.getElementById("display")
+    display.innerHTML += value
 
     //call function to update array and assign
 }
