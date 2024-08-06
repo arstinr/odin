@@ -65,11 +65,13 @@ function operatorClick(){
 
 function clearArray(){
     //clear display
-    const display = document.getElementById("display")
+    const display = document.getElementById("display");
     display.innerHTML = "";
     
-    //clear array
-    equation = []
+    //clear equation object
+    equation.a = null;
+    equation.b = null;
+    equation.operator = null;
 }
 
 //should only be called when an operator is pressed.
