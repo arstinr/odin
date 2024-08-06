@@ -3,7 +3,7 @@ let b = 3;
 let operator;
 //operator names are add, subtract, multiply, divide
 
-equation = []
+let equation = []
 
 function add(a, b){
     return a + b;
@@ -72,6 +72,7 @@ function clearArray(){
 
 function updateEquation(){
     //assing n destructure equation array to assign variables
+
 }
 
 
