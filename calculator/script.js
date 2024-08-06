@@ -34,10 +34,12 @@ function operate(a, b, operator){
 }
 
 
-function appendToDisplay(){
+function appendToDisplay(value){
     //user clicks button
     //appends button to display
     
+
+    //call function to update array and assign
 }
 
 function operatorClick(){
