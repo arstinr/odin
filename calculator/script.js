@@ -30,17 +30,8 @@ function divide(a, b){
 }
 
 function operate(a, b, operator){
-    operator(a, b);
-    equation.a = solution;    
-    // if (operator === 'add'){
-    //     return add(a, b);
-    // } else if (operator === 'subtract') {
-    //     return subtract(a, b);
-    // } else if (operator === 'multiply') {
-    //     return multiply(a, b);
-    // } else if (operator === 'divide') {
-    //     return divide(a, b);
-    // }
+    let result = operator(a, b);
+    equation.a = result;    
 }
 
 
