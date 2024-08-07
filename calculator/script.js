@@ -10,19 +10,23 @@ let equation = {
 };
 
 function add(a, b){
-    return a + b;
+    solution = a + b
+    return solution;
 }
 
 function subtract(a, b){
-    return a - b;
+    solution = a - b
+    return solution;
 }
 
 function multiply(a, b){
-    return a * b;
+    solution = a * b
+    return solution;
 }
 
 function divide(a, b){
-    return a / b;
+    solution = a / b
+    return solution;
 }
 
 function operate(a, b, operator){
@@ -55,7 +59,8 @@ function operatorClick(value){
     equation.operator = value;
 
     if (a !== null && b !== null){
-        operate(equation.a, equation.b, equation.operator)
+        operate(equation.a, equation.b, equation.operator);
+
     }
     //if a and b is not null, call operate function and pass values
         //should update display with answer and set it to new a
