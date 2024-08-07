@@ -45,6 +45,9 @@ function appendToDisplay(value){
     //appends button to display
     const display = document.getElementById("display")
     display.innerHTML += value
+
+    //set display value as a
+    equation.a = display.innerHTML
 }
 
 function operatorClick(value){
@@ -56,6 +59,7 @@ function operatorClick(value){
         //set b to null
     //else if a is not null and b is null, deeper if statement
         //
+    //else if a n b are null (return none)
 
     //if statement to check if a is null (if not, make display be b)
     //when operator is pressed
