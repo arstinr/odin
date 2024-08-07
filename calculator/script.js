@@ -31,7 +31,10 @@ function divide(a, b){
 
 function operate(a, b, operator){
     let result = operator(a, b);
-    equation.a = result;    
+    equation.a = result;
+
+    const display = document.getElementById("display")
+    display.innerHTML = equation.a
 }
 
 
@@ -39,7 +42,11 @@ function appendToDisplay(value){
     //user clicks button
     //appends button to display
     const display = document.getElementById("display")
-    display.innerHTML += value
+    //replace with if statement,
+    // if display is empty
+    display.innerHTML += value //set display value as a also
+    // if display is not empty
+        // replace display with
 
     //set display value as a
     equation.a = display.innerHTML
@@ -53,7 +60,14 @@ function operatorClick(value){
         operate(equation.a, equation.b, equation.operator);
         equation.b = null;
         equation.operator = null;
+    } else if (a !== null && b === null){
+        //exit so user can set value for b
+        return;
+    } else if (a === null && b === null){
+        equation.a = 0;
     }
+
+
     //if a and b is not null, call operate function and pass values
         //should update display with answer and set it to new a
         //set b to null
