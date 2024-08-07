@@ -1,7 +1,6 @@
 let a = 2;
 let b = 3;
 let operator;
-//operator names are add, subtract, multiply, divide
 
 let equation = {
     a: null,
@@ -37,7 +36,9 @@ function operate(a, b, operator){
     display.innerHTML = equation.a
 }
 
-
+//START HERE
+//might have to replace this whole function
+// button press -> set values, display those values.
 function appendToDisplay(value){
     //user clicks button
     //appends button to display
@@ -82,16 +83,6 @@ function clearDisplay(){
     equation.b = null;
     equation.operator = null;
 }
-
-//should only be called when an operator is pressed.
-function updateEquation(value){
-    //assing n destructure equation array to assign variables
-    equation.push(value)
-    console.log(`${equation}`)
-}
-
-//next steps: REPLACE ARRAYS WITH OBJECTS
-
 
 
 
