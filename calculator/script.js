@@ -54,6 +54,9 @@ function operatorClick(value){
     //set equation.operator to passed value ^
     equation.operator = value;
 
+    if (a !== null && b !== null){
+        operate(equation.a, equation.b, equation.operator)
+    }
     //if a and b is not null, call operate function and pass values
         //should update display with answer and set it to new a
         //set b to null
