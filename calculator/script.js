@@ -10,28 +10,28 @@ let equation = {
 };
 
 function add(a, b){
-    solution = a + b
+    let solution = a + b
     return solution;
 }
 
 function subtract(a, b){
-    solution = a - b
+    let solution = a - b
     return solution;
 }
 
 function multiply(a, b){
-    solution = a * b
+    let solution = a * b
     return solution;
 }
 
 function divide(a, b){
-    solution = a / b
+    let solution = a / b
     return solution;
 }
 
 function operate(a, b, operator){
-    return operator(a, b);
-    
+    operator(a, b);
+    equation.a = solution;    
     // if (operator === 'add'){
     //     return add(a, b);
     // } else if (operator === 'subtract') {
