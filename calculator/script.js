@@ -43,10 +43,13 @@ function appendToDisplay(value){
     //appends button to display
     const display = document.getElementById("display")
     //replace with if statement,
-    // if display is empty
+    // if operator is null
     display.innerHTML += value //set display value as a also
-    // if display is not empty
-        // replace display with
+    // if operator is not null
+        // set display as a parin to be safe, then
+        // replace display with display var
+        //set this display as equation.b
+        //FIX LOGIC FOR NUMBER INPUT
 
     //set display value as a
     equation.a = display.innerHTML
