@@ -3,9 +3,9 @@ let b = 3;
 let operator;
 
 let equation = {
-    a: null,
-    b: null,
-    operator: null
+    a: '',
+    b: '',
+    operator: ''
 };
 
 function add(a, b){
@@ -44,11 +44,11 @@ function operate(a, b, operator){
 function setValue(value){
     let toDisplay;
 
-    if (equation.a !== null) {
-        equation.b += value
+    if (equation.a !== '') {
+        equation.b += `${value}`
         toDisplay = equation.b
-    } else if (equation.a === null) {
-        equation.a += value
+    } else if (equation.a === '') {
+        equation.a += `${value}`
         toDisplay = equation.a
     }
 
@@ -68,14 +68,14 @@ function operatorClick(value){
     //set equation.operator to passed value ^
     equation.operator = value;
 
-    if (equation.a !== null && equation.b !== null){
+    if (equation.a !== '' && equation.b !== ''){
         operate(equation.a, equation.b, equation.operator);
-        equation.b = null;
-        equation.operator = null;
-    } else if (equation.a !== null && equation.b === null){
+        equation.b = '';
+        equation.operator = '';
+    } else if (equation.a !== '' && equation.b === ''){
         //exit so user can set value for b
         return;
-    } else if (equation.a === null && equation.b === null){
+    } else if (equation.a === '' && equation.b === ''){
         equation.a = 0;
     }
 }
@@ -87,9 +87,9 @@ function clearDisplay(){
     display.innerHTML = "";
     
     //clear equation object
-    equation.a = null;
-    equation.b = null;
-    equation.operator = null;
+    equation.a = '';
+    equation.b = '';
+    equation.operator = '';
 }
 
 
