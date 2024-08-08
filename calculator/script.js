@@ -1,6 +1,7 @@
 let a = 2;
 let b = 3;
 let operator;
+let isOperatorCLicked = false
 
 let equation = {
     a: '',
@@ -71,7 +72,14 @@ function operatorClick(value){
     //when operator is pressed
     //get value of display 
     //make it equation.a
-    //have isOperatorCLicked
+    //have isOperatorCLicked set to true (by falsifying) 
+    //end 
+
+    //apply in setValue function !!
+    //if isOperatorClicked (true)
+        // equation.b += value
+    //else if isOperatorClicked(false)
+        // equation.a += value
 
     if (equation.a !== '' && equation.b !== ''){
         operate(equation.a, equation.b, equation.operator);
