@@ -41,7 +41,9 @@ function operate(a, b, operator){
 // button press -> set values, display those values.
 
 function setValue(value){
+    if (equation) {
 
+    }
 }
 
 function appendToDisplay(value){
@@ -65,7 +67,7 @@ function operatorClick(value){
     //set equation.operator to passed value ^
     equation.operator = value;
 
-    if (a !== null && b !== null){
+    if (equation.a !== null && equation.b !== null){
         operate(equation.a, equation.b, equation.operator);
         equation.b = null;
         equation.operator = null;
