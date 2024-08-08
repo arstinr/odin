@@ -39,6 +39,11 @@ function operate(a, b, operator){
 //START HERE
 //might have to replace this whole function
 // button press -> set values, display those values.
+
+function setValue(value){
+
+}
+
 function appendToDisplay(value){
     //user clicks button
     //appends button to display
@@ -53,7 +58,7 @@ function appendToDisplay(value){
         //FIX LOGIC FOR NUMBER INPUT
 
     //set display value as a
-    equation.a = display.innerHTML
+    //equation.a = display.innerHTML
 }
 
 function operatorClick(value){
