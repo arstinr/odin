@@ -37,19 +37,10 @@ function operate(a, b, operator){
     display.innerHTML = equation.a
 }
 
-//START HERE
-
-
 // button press -> set values, display those values.
 
 function setValue(value){
     let toDisplay;
-
-    //apply in setValue function !!
-    //if isOperatorClicked (true)
-        // equation.b += value
-    //else if isOperatorClicked(false)
-        // equation.a += value
 
     if (isOperatorCLicked === true){
         equation.b += `${value}`
@@ -59,52 +50,22 @@ function setValue(value){
         toDisplay = equation.a
     }
 
-    // if (equation.a !== '') {
-    //     equation.a += `${value}`
-    //     toDisplay = equation.a
-    // } else if (equation.a === '') {
-    //     equation.a += `${value}`
-    //     toDisplay = equation.a
-    // }
-
     appendToDisplay(toDisplay);
 }
 
-//might have to replace this whole function
+
 function appendToDisplay(value){
-    //appends number to display
     const display = document.getElementById("display")
     display.innerHTML = value
 }
 
 function operatorClick(value){
-    //set equation.operator to passed value ^
     equation.operator = value;
 
     const display = document.getElementById("display")
     equation.a = display.innerHTML
     
     isOperatorCLicked = !isOperatorCLicked
-
-    operate(equation.a, equation.b, equation.operator);
-    
-    //when operator is pressed
-    //get value of display 
-    //make it equation.a
-    //have isOperatorCLicked set to true (by falsifying) 
-    //end 
-
-
-    // if (equation.a !== '' && equation.b !== ''){
-    //     operate(equation.a, equation.b, equation.operator);
-    //     equation.b = '';
-    //     equation.operator = '';
-    // } else if (equation.a !== '' && equation.b === ''){
-    //     //exit so user can set value for b
-    //     return;
-    // } else if (equation.a === '' && equation.b === ''){
-    //     equation.a = 0;
-    // }
 }
 
 
