@@ -1,12 +1,12 @@
 let a = 2;
 let b = 3;
 let operator;
-let isOperatorCLicked = false
+let isOperatorClicked = false
 
 let equation = {
     a: '',
     b: '',
-    operator: ''
+    operator: null
 };
 
 function add(a, b){
@@ -29,8 +29,13 @@ function divide(a, b){
     return solution;
 }
 
-function operate(a, b, operator){
+function operate(equation){
+    const a = equation.a
+    const b = equation.b
+    const operator = equation.operator
+
     let result = operator(a, b);
+    console.log(`${result}`)
     equation.a = result;
 
     const display = document.getElementById("display")
@@ -42,12 +47,14 @@ function operate(a, b, operator){
 function setValue(value){
     let toDisplay;
 
-    if (isOperatorCLicked === true){
+    if (isOperatorClicked === true){
         equation.b += `${value}`
         toDisplay = equation.b
+        console.log(`B is set to: ${equation.b}`)
     } else {
         equation.a += `${value}`
         toDisplay = equation.a
+        console.log(`A is set to: ${equation.a}`)
     }
 
     appendToDisplay(toDisplay);
@@ -61,11 +68,13 @@ function appendToDisplay(value){
 
 function operatorClick(value){
     equation.operator = value;
+    console.log(`Operator set to: ${equation.operator}`)
 
     const display = document.getElementById("display")
     equation.a = display.innerHTML
     
-    isOperatorCLicked = !isOperatorCLicked
+    isOperatorClicked = !isOperatorClicked
+    console.log(`isOperatorClicked set to: ${isOperatorClicked}`)
 }
 
 
