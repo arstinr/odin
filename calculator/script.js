@@ -45,8 +45,8 @@ function setValue(value){
     let toDisplay;
 
     if (equation.a !== '') {
-        equation.b += `${value}`
-        toDisplay = equation.b
+        equation.a += `${value}`
+        toDisplay = equation.a
     } else if (equation.a === '') {
         equation.a += `${value}`
         toDisplay = equation.a
@@ -67,6 +67,11 @@ function appendToDisplay(value){
 function operatorClick(value){
     //set equation.operator to passed value ^
     equation.operator = value;
+
+    //when operator is pressed
+    //get value of display 
+    //make it equation.a
+    //have isOperatorCLicked
 
     if (equation.a !== '' && equation.b !== ''){
         operate(equation.a, equation.b, equation.operator);
