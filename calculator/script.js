@@ -71,10 +71,10 @@ function operatorClick(value){
         operate(equation.a, equation.b, equation.operator);
         equation.b = null;
         equation.operator = null;
-    } else if (a !== null && b === null){
+    } else if (equation.a !== null && equation.b === null){
         //exit so user can set value for b
         return;
-    } else if (a === null && b === null){
+    } else if (equation.a === null && equation.b === null){
         equation.a = 0;
     }
 }
