@@ -37,30 +37,31 @@ function operate(a, b, operator){
 }
 
 //START HERE
-//might have to replace this whole function
+
+
 // button press -> set values, display those values.
 
 function setValue(value){
-    if (equation) {
+    let toDisplay;
 
+    if (equation.a !== null) {
+        equation.b += value
+        toDisplay = equation.b
+    } else if (equation.a === null) {
+        equation.a += value
+        toDisplay = equation.a
     }
+
+    appendToDisplay(toDisplay);
+
+
 }
 
+//might have to replace this whole function
 function appendToDisplay(value){
-    //user clicks button
-    //appends button to display
+    //appends number to display
     const display = document.getElementById("display")
-    //replace with if statement,
-    // if operator is null
-    display.innerHTML += value //set display value as a also
-    // if operator is not null
-        // set display as a parin to be safe, then
-        // replace display with display var
-        //set this display as equation.b
-        //FIX LOGIC FOR NUMBER INPUT
-
-    //set display value as a
-    //equation.a = display.innerHTML
+    display.innerHTML = value
 }
 
 function operatorClick(value){
