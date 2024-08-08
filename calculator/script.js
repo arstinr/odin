@@ -29,14 +29,16 @@ function divide(a, b){
     return solution;
 }
 
-function operate(equation){
-    const a = equation.a
-    const b = equation.b
+function operate(){
+    const a = parseFloat(equation.a)
+    const b = parseFloat(equation.b)
     const operator = equation.operator
 
     let result = operator(a, b);
     console.log(`${result}`)
     equation.a = result;
+    equation.b = '';
+    equation.operator = null; 
 
     const display = document.getElementById("display")
     display.innerHTML = equation.a
@@ -68,7 +70,7 @@ function appendToDisplay(value){
 
 function operatorClick(value){
     equation.operator = value;
-    console.log(`Operator set to: ${equation.operator}`)
+    console.log(`Operator set to: ${value.name}`)
 
     const display = document.getElementById("display")
     equation.a = display.innerHTML
