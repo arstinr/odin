@@ -45,3 +45,41 @@ puts "hello"[0]
 puts "hello"[0..1]
 puts "hello"[0, 4]
 puts "hello"[-1]
+
+# Escape chars
+
+# \n # new line
+# \t #tab
+
+# Interpolation
+# use double quotes!!!!!
+city = "Paranaque"
+
+puts "City of #{city}"
+
+#so in js it's ${} but in ruby it's #{}
+
+# Common string methods
+#  .capitalize (first letter)
+#  .include?
+#  .upcase
+#  .downcase
+#  .empty? (checks if string is empty)
+#  .length
+#  .reverse
+#  .split (sentences into words, strings into letters)
+#  .strip
+#  .sub(a, b) (replace a with b)
+#  .gsub(a, b) (same but all as)
+#  .insert(i, a)
+#  .delete(a)
+#  .prepend() (append in front)
+
+#  Convert to string
+#   .to_s
+
+#   Symbols
+#   add :my_symbol
+
+#   nil means nothing
+#   nil instead of null
