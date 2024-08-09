@@ -23,8 +23,12 @@ function multiply(a, b){
 }
 
 function divide(a, b){
-    let solution = a / b
-    return solution;
+    if (b === 0){
+        return alert('You cannot do that!!');
+    } else {
+        let solution = a / b
+        return solution;
+    }
 }
 
 function operate(){
@@ -103,4 +107,5 @@ function clearDisplay(){
     equation.a = '';
     equation.b = '';
     equation.operator = null;
+    isOperatorClicked = false;
 }
