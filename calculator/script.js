@@ -48,8 +48,6 @@ function operate(){
         const display = document.getElementById("display")
         display.innerHTML = equation.a
     }
-
-
 }
 
 //next steps:
@@ -86,11 +84,12 @@ function operatorClick(value){
     const display = document.getElementById("display")
     equation.a = display.innerHTML
     
-    //if isOperatorLastClicked === false
-        // dont change
-    //else
-        //falsify
-    isOperatorClicked = !isOperatorClicked
+    if (isOperatorClicked === true){
+        isOperatorClicked = true
+    } else if (isOperatorClicked === false){
+        isOperatorClicked = true
+    }
+
     console.log(`isOperatorClicked set to: ${isOperatorClicked}`)
 }
 
@@ -103,5 +102,5 @@ function clearDisplay(){
     //clear equation object
     equation.a = '';
     equation.b = '';
-    equation.operator = '';
+    equation.operator = null;
 }
