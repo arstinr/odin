@@ -1,5 +1,3 @@
-let a = 2;
-let b = 3;
 let operator;
 let isOperatorClicked = false
 
@@ -34,15 +32,28 @@ function operate(){
     const b = parseFloat(equation.b)
     const operator = equation.operator
 
-    let result = operator(a, b);
-    console.log(`${result}`)
-    equation.a = result;
-    equation.b = '';
-    equation.operator = null; 
+    if (
+        (a === '') || 
+        (b === '') || 
+        (operator === null)
+        ){
+        console.log('A, B, operator is incomplete')
+    } else {
+        let result = operator(a, b);
+        console.log(`${result}`)
+        equation.a = result;
+        equation.b = '';
+        equation.operator = null; 
+    
+        const display = document.getElementById("display")
+        display.innerHTML = equation.a
+    }
 
-    const display = document.getElementById("display")
-    display.innerHTML = equation.a
+
 }
+
+//next steps:
+// fix isOperatorClicked falsifier so people can operate sunod sunod
 
 // button press -> set values, display those values.
 
@@ -75,6 +86,10 @@ function operatorClick(value){
     const display = document.getElementById("display")
     equation.a = display.innerHTML
     
+    //if isOperatorLastClicked === false
+        // dont change
+    //else
+        //falsify
     isOperatorClicked = !isOperatorClicked
     console.log(`isOperatorClicked set to: ${isOperatorClicked}`)
 }
@@ -90,10 +105,3 @@ function clearDisplay(){
     equation.b = '';
     equation.operator = '';
 }
-
-
-
-console.log(add(a, b))
-console.log(subtract(a, b))
-console.log(multiply(a, b))
-console.log(divide(a, b))
