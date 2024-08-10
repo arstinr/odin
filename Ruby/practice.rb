@@ -94,4 +94,33 @@ puts "City of #{city}"
   # use gets (always adds new line)
   # .chomp is a common method to trim seperators (like \n)
 
-  
+# CONDITIONALS
+#  if, elsif (not else if :<), else
+#  if vs unless (unless is opposite of if, does code when condition is false)
+
+#   if attack_by_land == true
+#     puts "release the goat"
+#   elsif attack_by_sea == true
+#     puts "release the shark"
+#   else
+#     puts "release Kevin the octopus"
+#   end
+
+#   boolean values
+#   ==, !=, >, <, <=, >=
+#   .eql? (checks value type and value)
+#   .equal? (checks if exact same object in memory)
+
+#   spaceship operator (<=>)
+#   -1 if left is smaller
+#   0 if equal
+#   1 if left is larger
+
+# Ternary operator
+# conditional statement ? <execute if true> : <execute if false>
+
+# Case statement
+# case <var name>
+# when <condition>
+#   <code to execute here>
+# can use multiple whens then an else then an end
