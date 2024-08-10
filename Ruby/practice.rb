@@ -124,3 +124,23 @@ puts "City of #{city}"
 # when <condition>
 #   <code to execute here>
 # can use multiple whens then an else then an end
+
+
+# LOOPS
+# <keyword> <condition> do
+#  code here
+# end
+
+# KEywords include 
+  # loop (meh)
+  # while (set i counter above)
+  # until (set i counter above too) (opposite of while loop lol)
+
+  #for loop also
+  # .times (will repeat n number of times
+  # .upto()
+  # .downto()
+  
+# Ranges
+# (1..5) inclusive (includes 5)
+# (1...5) exclusive (no 5)
