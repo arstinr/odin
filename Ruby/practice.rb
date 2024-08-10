@@ -83,3 +83,15 @@ puts "City of #{city}"
 
 #   nil means nothing
 #   nil instead of null
+
+# NAMING VARIABLES
+# use snake_case :<
+
+# INPUT AND OUTPUT
+# for output
+  # use puts (new line), print (all same line), p (to debug)
+# for input 
+  # use gets (always adds new line)
+  # .chomp is a common method to trim seperators (like \n)
+
+  
