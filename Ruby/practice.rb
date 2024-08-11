@@ -189,3 +189,22 @@
 # METHODS
 # functions n methods are the same
 # everything in ruby is an object so all are methods, no functions
+
+# def new_method
+#   "arstin"
+# end
+
+# puts new_method
+
+def newer_method(age = "23")
+  "Arstin is " + age + " years old."
+end
+
+puts newer_method()
+
+# add return statement!
+# you can chain methods too to make it concise!
+# predicate methods - have ? and return booleans
+# name your boolean methods with ? too
+
+# to change value of var, add ! (bang method) at the end so it changes actual value.
