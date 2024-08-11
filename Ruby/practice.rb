@@ -185,3 +185,7 @@
 # }
 
 # accessing them is by using :key
+
+# METHODS
+# functions n methods are the same
+# everything in ruby is an object so all are methods, no functions
