@@ -151,3 +151,6 @@ puts "City of #{city}"
 
 # .unshift() (adds in front)
 # .shift() (removes from front n returns that value)
+
+# .concat() to add arrays
+# .methods on an array will return long list of methods
