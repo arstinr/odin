@@ -144,3 +144,10 @@ puts "City of #{city}"
 # Ranges
 # (1..5) inclusive (includes 5)
 # (1...5) exclusive (no 5)
+
+# Arrays
+# .push() (adds at the end)
+# .pop() (removes from the end)
+
+# .unshift() (adds in front)
+# .shift() (removes from front n returns that value)
