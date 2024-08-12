@@ -208,3 +208,9 @@ puts newer_method()
 # name your boolean methods with ? too
 
 # to change value of var, add ! (bang method) at the end so it changes actual value.
+
+# DEBUGGING
+# use puts (like console.log()), p (puts and inspect for empty arrays n values)
+# use also 
+
+#puts backwards one by one 
