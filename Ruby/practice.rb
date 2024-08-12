@@ -214,3 +214,7 @@ puts newer_method()
 # use also 
 
 #puts backwards one by one 
+
+# BASIC ENUMERABLE METHODS
+# PREDICATE ENUMERABLE METHODS
+# NESTED COLLECTIONS
