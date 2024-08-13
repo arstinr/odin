@@ -232,7 +232,17 @@ puts newer_method()
   # .reduce (used to reduce a hash/array into a single object) (ex. sum of an array)
     # use accumulator |accumulator, x|
   
-  
+  # use BANG (.map! for example)
+    # when you want to change original array/hash instead
+    # DESTRUCTIVE and modifies!
+    # not a good idea
+
+  # If you want to reuse the result of a method, store it in a local var
+# invited_friends = friends.select {}
+#   # but better to wrap it in a method definition
+#   def invited_friends(friends)
+#     friends.select { |friend| friend != "brian"}
+#   end
 
 
 # PREDICATE ENUMERABLE METHODS
