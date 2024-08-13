@@ -216,5 +216,24 @@ puts newer_method()
 #puts backwards one by one 
 
 # BASIC ENUMERABLE METHODS
+  # enumerables are built in methods as part of arrays and hashes
+  # .each (does it for each element in array/hash)
+  # |friend| is a block variable (the element that is being iterated over)
+  # if cant fit in one line,
+  # use do...end instead of {}
+  # block variable is listed after "do" |x|
+    # for hashes,
+      # |key, value| or |pair|
+
+  #.each_with_index (uses |x, index|)
+  # .map (retrns new array)
+    #.gsub 
+  # .select is filter basically (returns new arrays)
+  # .reduce (used to reduce a hash/array into a single object) (ex. sum of an array)
+    # use accumulator |accumulator, x|
+  
+  
+
+
 # PREDICATE ENUMERABLE METHODS
 # NESTED COLLECTIONS
