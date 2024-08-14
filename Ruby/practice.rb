@@ -246,4 +246,16 @@ puts newer_method()
 
 
 # PREDICATE ENUMERABLE METHODS
+# has ? at the end
+# returns true or false
+
+# .include?
+  # checks if it is included
+# .any?
+  # checks if any of condition is present
+# .all?
+  # only returns true if ALL elements match condition
+# .none? 
+  # opposite of all
+
 # NESTED COLLECTIONS
