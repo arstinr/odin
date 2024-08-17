@@ -19,6 +19,6 @@ def caesar_cipher(text, shift_value)
   shift_value = gets.chomp
   #create lowercase array
   #create uppercase array
-  
+  blud
 
 end
